@@ -16,7 +16,7 @@
 
 - 500 Internal Server Error
 # Error response
-     {
+    {
     "http_status_code": "404",
     "http_method": "GET",
     "message": "Client doesn't exist"
@@ -33,30 +33,16 @@
     "id":"24", 
     "name":"Ivan",
     "age":"25",
-    "email":"ivanivano@abv.bg",
-    "orders":{
-    "id":"1",
-    "books":{
-    "title":"Pod igoto",
-    "price":"25 "
-    }
-    }
+    "email":"ivanivano@abv.bg"
     },
     {
     "id":"2",
     "name":"Gosho",
     "age":"36",
     "email":"goshogoshev@abv.bg",
-    "orders":{
-    "id":"2",
-    "books":{
-    "title":"Harry Potter and the Philosopher's Stone",
-    "price":"40"
     }
-    }
-    }
-    ]
-    }
+     ]
+      }
 
 - Delete a User: (DELETE)/user/{id}
 - 
@@ -78,7 +64,6 @@
 - Response Body:
 
       {
-       "id":"24",
        "name":"Ivan",
        "age":"25",
        "email":"ivanivano@abv.bg"
