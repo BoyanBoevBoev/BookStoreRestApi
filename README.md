@@ -46,11 +46,7 @@
 
 - Delete a User: (DELETE)/user/{id}
 - 
-  Response 
-
-      {
-       "Deleted customer id": "1"
-      }
+  Response: 204 No Content
 - Update a User: (PUT)/user/{id}
 
 - Request Body:
