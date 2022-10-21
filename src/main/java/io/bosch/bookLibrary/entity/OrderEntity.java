@@ -1,7 +1,6 @@
 package io.bosch.bookLibrary.entity;
 
 import javax.persistence.*;
-import java.awt.print.Book;
 import java.time.LocalDate;
 import java.util.Set;
 @Entity
@@ -13,6 +12,6 @@ public class OrderEntity {
     @ManyToMany(targetEntity = BookEntity.class,mappedBy = "orderSet")
     private Set<BookEntity> bookSet;
     @ManyToOne
-    private CustomerEntity customer;
+    private UserEntity userEntity;
     private LocalDate localDate;
 }
