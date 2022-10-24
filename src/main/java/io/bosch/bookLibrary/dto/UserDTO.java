@@ -1,4 +1,5 @@
-package io.bosch.bookLibrary.entity.dto;
+package io.bosch.bookLibrary.dto;
+
 
 import lombok.Data;
 
@@ -9,4 +10,6 @@ public class UserDTO {
     private String name;
     private int age;
     private String email;
+
+
 }

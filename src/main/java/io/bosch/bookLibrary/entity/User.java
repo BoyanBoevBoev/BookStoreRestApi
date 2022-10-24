@@ -6,16 +6,15 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "customers")
+@Table(name = "users")
 @Data
-public class CustomerEntity {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private int age;
-
     private String email;
-    @OneToMany(targetEntity = OrderEntity.class, mappedBy = "customer")
-    private Set<OrderEntity> orderSet;
+    @OneToMany(targetEntity = Order.class, mappedBy = "user")
+    private Set<Order> orderSet;
 }

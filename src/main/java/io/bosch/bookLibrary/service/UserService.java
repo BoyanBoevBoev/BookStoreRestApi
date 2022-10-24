@@ -1,15 +1,16 @@
 package io.bosch.bookLibrary.service;
 
-import io.bosch.bookLibrary.entity.dto.UserDTO;
+import io.bosch.bookLibrary.entity.User;
+import io.bosch.bookLibrary.dto.UserDTO;
 
 import java.util.List;
 
 public interface UserService {
-    List<UserDTO> getAllUsers();
+    List<User> getAllUsers();
 
     void deleteBook(long id);
 
-    long createUser(UserDTO userDTO);
+    User createUser(UserDTO userDTO);
 
-    UserDTO updateUser(UserDTO userDTO, Long id);
+    User updateUser(UserDTO userDTO, Long id);
 }
