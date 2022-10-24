@@ -15,6 +15,5 @@ public class User {
     private String name;
     private int age;
     private String email;
-    @OneToMany(targetEntity = Order.class, mappedBy = "user")
-    private Set<Order> orderSet;
+
 }

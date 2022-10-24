@@ -24,7 +24,6 @@ public class UserController {
 
 
     @GetMapping
-    @ResponseStatus(HttpStatus.OK)
     public UsersDTO getAllUsers() {
 
         List<UserDTO> collect = userService.getAllUsers().stream()
@@ -50,7 +49,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     public UserDTO updateUser(@RequestBody UserDTO userDTO, @PathVariable("id") Long id) {
         User updatedUser = userService.updateUser(userDTO, id);
         return asUser(updatedUser);
